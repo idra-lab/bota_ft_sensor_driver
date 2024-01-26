@@ -447,29 +447,30 @@ protected:
   // EtherCAT context data.
   // Note: SOEM does not use dynamic memory allocation (new/delete). Therefore
   // all context pointers must be null or point to an existing member.
-  ecx_contextt ecatContext_ = { &ecatPort_,
-                                &ecatSlavelist_[0],
-                                &ecatSlavecount_,
-                                EC_MAXSLAVE,
-                                &ecatGrouplist_[0],
-                                EC_MAXGROUP,
-                                &ecatEsiBuf_[0],
-                                &ecatEsiMap_[0],
-                                0,
-                                &ecatEList_,
-                                &ecatIdxStack_,
-                                &ecatError_,
-                                &ecatDcTime_,
-                                &ecatSmCommtype_[0],
-                                &ecatPdoAssign_[0],
-                                &ecatPdoDesc_[0],
-                                &ecatSm_,
-                                &ecatFmmu_,
-                                NULL,               // .FOEhook()
-    				NULL,               // .EOEhook()
-    				0,                  // .manualstatechange
-   				NULL,
-   				};
+  ecx_contextt ecatContext_ = {
+    &ecatPort_,
+    &ecatSlavelist_[0],
+    &ecatSlavecount_,
+    EC_MAXSLAVE,
+    &ecatGrouplist_[0],
+    EC_MAXGROUP,
+    &ecatEsiBuf_[0],
+    &ecatEsiMap_[0],
+    0,
+    &ecatEList_,
+    &ecatIdxStack_,
+    &ecatError_,
+    &ecatDcTime_,
+    &ecatSmCommtype_[0],
+    &ecatPdoAssign_[0],
+    &ecatPdoDesc_[0],
+    &ecatSm_,
+    &ecatFmmu_,
+    NULL,  // .FOEhook()
+    NULL,  // .EOEhook()
+    0,     // .manualstatechange
+    NULL,
+  };
 };
 
 using EthercatBusBasePtr = std::shared_ptr<EthercatBusBase>;
