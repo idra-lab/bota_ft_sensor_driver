@@ -26,3 +26,11 @@ To reset the sensor use the following command:
 . reset.sh
 ```
 
+If you want to read the data outside sudo mode you will have to add to your bashrc the following line:
+```bash
+export export FASTRTPS_DEFAULT_PROFILES_FILE=path_to_bota_ft_sensor_driver/udp_transport.xml
+```
+and then run the following command:
+```bash
+source ~/.bashrc
+```
