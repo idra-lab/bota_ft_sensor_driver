@@ -28,7 +28,7 @@ def generate_launch_description():
                     'time_step': 0.00125
                 },
                 {
-                    'ethercat_bus': 'eno1'
+                    'ethercat_bus': 'enp108s0'
                 },
                 {
                     'rokubiminis': ['ft_sensor0']  # ['ft_sensor0', 'ft_sensor1']
