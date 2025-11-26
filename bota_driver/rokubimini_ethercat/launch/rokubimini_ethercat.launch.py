@@ -25,10 +25,10 @@ def generate_launch_description():
                     'num_spinners': 3
                 },
                 {
-                    'time_step': 0.00125
+                    'time_step': 0.001
                 },
                 {
-                    'ethercat_bus': 'enp108s0'
+                    'ethercat_bus': 'enp38s0'
                 },
                 {
                     'rokubiminis': ['ft_sensor0']  # ['ft_sensor0', 'ft_sensor1']
